@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu restauracji</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="menu-container">
+        <h1>🍣 Menu</h1>
+        <div id="menu"></div>
+      </div>
+
+      <div id="cart">
+        <h2>🛒 Koszyk</h2>
+
+        <input id="name" placeholder="Imię klienta" />
+        <input id="phone" placeholder="Numer telefonu" />
+
+        <div id="cartItems"></div>
+        <div class="total">Suma: <span id="total">0</span> zł</div>
+
+        <button id="orderBtn">Złóż zamówienie</button>
+      </div>
+    </div>
+    <div id="toast" class="toast hidden">🎉 Zamówienie zostało złożone! Dziękujemy 💖</div>
+    <div id="errorToast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
